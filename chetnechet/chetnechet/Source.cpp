@@ -30,7 +30,7 @@ int main()
 		if (vvodp[i] == '1' || vvodp[i] == '3' || vvodp[i] == '5' || vvodp[i] == '7' || vvodp[i] == '9') nechet++;
 	}
 
-	cout << "„исло чЄтных чисел: " << chet << endl << "„исло нечЄтных чисел: " << nechet << endl;
+	cout << "Even numbers : " << chet << endl << "Odd numbers : " << nechet << endl;
 
 	system("pause");
 }
