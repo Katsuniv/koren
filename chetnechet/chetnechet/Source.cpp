@@ -7,8 +7,6 @@ using namespace std;
 
 int main()
 {
-	setlocale(LC_ALL, "rus");
-
 	string vvod="";
 	string vvodp="";
 	ifstream fin("vvod.txt");
