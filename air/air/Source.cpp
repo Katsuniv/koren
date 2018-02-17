@@ -17,7 +17,7 @@ int main()
 	if (place == 'e') time = 2;
 	if (place == 'f') time = 1;
 
-	
+	time = time + (range - 1) / 4 * 16 + (range % 2 ? 0 : 7);
 	
 	cout << time << endl;
 
