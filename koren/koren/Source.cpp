@@ -14,7 +14,6 @@ int main()
 		R1 += R;
 		R2 = sqrt(R1);
 	}
-
 	cout << R2 << endl;
 
 	system("pause");
