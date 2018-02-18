@@ -11,9 +11,7 @@ int main()
 		p[n] = (n * ((3 * n) - 1)) / 2;
 	}
 	for (int c= 0; c<10;c++)
-	{
 		for (int i = 1; i <= 1000; i++)
-		{
 			for (int j = 1; j < 1000; j++)
 			{
 				if (p[i] + p[i + c] == p[j])
@@ -35,8 +33,8 @@ int main()
 				}
 			}*/
 			
-		}
-	}
+		
+	
 	/*cout << "-----------------------" << endl;
 	for (int c = 0; c<10; c++)
 	{
