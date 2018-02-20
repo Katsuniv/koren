@@ -1,16 +1,37 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
-int main()
+int main(int argc, char* argv[])
 {
-	int a[100];
-	int p[1000];
-	for (int n = 1; n<1000; n++)
+	//int a[100];
+	//int p[1000];
+	int r = 0;
+	cin >> r;
+	int *p = new int[r];
+	for (int n = 1; n<=r; n++)
 	{
 		p[n] = (n * ((3 * n) - 1)) / 2;
 	}
-	for (int c= 0; c<10;c++)
+	for (int k = 0; k<10; k++)
+		for(int i = 1; i<r; i++)
+			for(int j = 2; j<=r; j++)
+				for(int s = 1; s<r; s++)
+					for (int v = 1; v<r;v++)
+					{
+						int sum = 0;
+						int raz = 0;
+						sum = p[i] + p[j];
+						raz = p[j] - p[i];
+
+						if (sum == p[s] && raz == p[v])
+						{
+							cout << p[i] << p[j] << endl;
+						}
+					}
+	
+	/*for (int c= 0; c<10;c++)
 		for (int i = 1; i <= 1000; i++)
 			for (int j = 1; j < 1000; j++)
 			{
@@ -51,9 +72,10 @@ int main()
 
 		}
 	}*/
-	for (int i = 0; i <= 100; i++)
+	for (int i = 1; i <= r; i++)
 	{
-		cout << a[i] << " ";
+		cout << p[i] << " ";
 	}
+//	delete p;
 	system("pause");
 }

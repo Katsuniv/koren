@@ -10,7 +10,7 @@ int main()
 	h = 15;
 	h1 = 17;
 	int counter = 0;
-	while (counter != 5)
+	while (counter != 4)
 	{
 		b = sqrt(pow((a / 2), 2) + pow(h, 2));
 		b1 = sqrt(pow((a / 2), 2) + pow(h1, 2));
